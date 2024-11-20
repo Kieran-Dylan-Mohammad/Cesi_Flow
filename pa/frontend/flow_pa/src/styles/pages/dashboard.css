@@ -1,0 +1,65 @@
+.dashboard-container {
+  min-height: 100vh;
+  background: var(--color-gray-50);
+}
+
+.dashboard-nav {
+  background: white;
+  padding: var(--spacing-md) var(--spacing-xl);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: var(--shadow-sm);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.dashboard-nav__logo {
+  height: 40px;
+  transition: transform var(--transition-fast);
+}
+
+.dashboard-nav__logo:hover {
+  transform: scale(1.05);
+}
+
+.dashboard-content {
+  max-width: var(--breakpoint-lg);
+  margin: var(--spacing-xl) auto;
+  padding: 0 var(--spacing-xl);
+  display: grid;
+  gap: var(--spacing-lg);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  animation: fadeInUp var(--transition-normal) ease-out;
+}
+
+/* Animation des cartes */
+.dashboard-content > * {
+  animation: fadeInUp var(--transition-normal) ease-out;
+  animation-fill-mode: both;
+}
+
+.dashboard-content > *:nth-child(1) { animation-delay: 0.1s; }
+.dashboard-content > *:nth-child(2) { animation-delay: 0.2s; }
+.dashboard-content > *:nth-child(3) { animation-delay: 0.3s; }
+.dashboard-content > *:nth-child(4) { animation-delay: 0.4s; }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .dashboard-content {
+    padding: 0 var(--spacing-md);
+    margin: var(--spacing-lg) auto;
+  }
+}

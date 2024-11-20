@@ -1,0 +1,50 @@
+:root {
+    /* Nouvelle palette de couleurs plus professionnelle */
+    --color-primary: #2563eb;
+    --color-primary-light: #3b82f6;
+    --color-primary-dark: #1d4ed8;
+    
+    /* Fond unifié */
+    --color-background: #f8fafc;
+    --color-surface: #f8fafc;
+    
+    /* Bordures et séparateurs */
+    --color-border: #e2e8f0;
+    
+    /* Ombres plus légères */
+    --shadow-sm: 0 1px 2px rgba(0,0,0,0.02);
+    --shadow-md: 0 2px 4px rgba(0,0,0,0.03);
+    --shadow-lg: 0 4px 6px rgba(0,0,0,0.04);
+    
+    /* Nouvelle hiérarchie de gris */
+    --color-gray-50: #f8fafc;
+    --color-gray-100: #f1f5f9;
+    --color-gray-200: #e2e8f0;
+    --color-gray-700: #334155;
+    --color-gray-800: #1e293b;
+    --color-gray-900: #0f172a;
+    
+    /* Gradients plus subtils */
+    --gradient-primary: linear-gradient(to right, var(--color-primary), var(--color-primary-dark));
+    --gradient-surface: linear-gradient(to bottom, var(--color-surface), var(--color-gray-50));
+    
+    /* Typographie */
+    --font-family-base: 'Inter', sans-serif;
+    --font-size-base: 1rem;
+    
+    /* Espacements */
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+    --spacing-xs: 0.25rem;
+    
+    /* Layout */
+    --breakpoint-lg: 1024px;
+    
+    /* Animations */
+    --transition-fast: 150ms ease;
+    --transition-normal: 250ms ease;
+    --transition-slow: 350ms ease;
+  }
+  

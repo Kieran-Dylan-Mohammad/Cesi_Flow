@@ -1,0 +1,44 @@
+.app-logo {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.app-logo__image {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+  transition: transform var(--transition-fast);
+}
+
+.app-logo__text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.app-logo__brand {
+  font-size: var(--font-size-lg);
+  font-weight: 700;
+  color: var(--color-gray-900);
+  letter-spacing: -0.02em;
+}
+
+.app-logo__tagline {
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-700);
+}
+
+.app-logo--small .app-logo__image {
+  height: 32px;
+}
+
+@media (max-width: 768px) {
+  .app-logo__text {
+    display: none;
+  }
+  
+  .app-logo__image {
+    height: 32px;
+  }
+}

@@ -1,0 +1,20 @@
+.layout {
+  min-height: 100vh;
+  background: var(--color-background);
+}
+
+.layout__main {
+  padding-top: var(--spacing-lg);
+}
+
+.container {
+  max-width: var(--breakpoint-lg);
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 var(--spacing-md);
+  }
+}
